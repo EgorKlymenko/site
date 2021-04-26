@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="stohastprog.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="subpage">
+            <div class="title">
+                Оптимальний розподіл та знаходження мінімальних витрат
+            </div>
+        </div>
+        <div class="example">
+            <input type="button" id="example" value="Підставити значення з прикладу" />
+        </div>
+        <div class="start_table">
+            <div class="title_zerno">
+                <div id="title0">Назва зерна</div>
+                <input type="text" id="zerno_title1" value="" />
+                <input type="text" id="zerno_title2" value="" />
+                <input type="text" id="zerno_title3" value="" />
+                <input type="text" id="zerno_title4" value="" />
+                <input type="text" id="zerno_title5" value="" />
+                <input type="text" id="zerno_title6" value="" />
+                <input type="text" id="zerno_title7" value="" />
+            </div>
+
+            <div class="korm_odinic">
+                <div id="korm_od0">Кормових одиниць, кг</div>
+                <input type="text" id="korm_od1" value="0" />
+                <input type="text" id="korm_od2" value="0" />
+                <input type="text" id="korm_od3" value="0" />
+                <input type="text" id="korm_od4" value="0" />
+                <input type="text" id="korm_od5" value="0" />
+                <input type="text" id="korm_od6" value="0" />
+                <input type="text" id="korm_od7" value="0" />
+            </div>
+            <div class="protein">
+                <div id="protein0">Перетравний протеїн, кг</div>
+                <input type="text" id="protein1" value="0" />
+                <input type="text" id="protein2" value="0" />
+                <input type="text" id="protein3" value="0" />
+                <input type="text" id="protein4" value="0" />
+                <input type="text" id="protein5" value="0" />
+                <input type="text" id="protein6" value="0" />
+                <input type="text" id="protein7" value="0" />
+            </div>
+            <div class="lizyn">
+                <div id="lizyn0">Лізин, кг</div>
+                <input type="text" id="lizyn1" value="0" />
+                <input type="text" id="lizyn2" value="0" />
+                <input type="text" id="lizyn3" value="0" />
+                <input type="text" id="lizyn4" value="0" />
+                <input type="text" id="lizyn5" value="0" />
+                <input type="text" id="lizyn6" value="0" />
+                <input type="text" id="lizyn7" value="0" />
+            </div>
+            <div class="kalciy">
+                <div id="kalciy0">Кальцій, кг</div>
+                <input type="text" id="kalciy1" value="0" />
+                <input type="text" id="kalciy2" value="0" />
+                <input type="text" id="kalciy3" value="0" />
+                <input type="text" id="kalciy4" value="0" />
+                <input type="text" id="kalciy5" value="0" />
+                <input type="text" id="kalciy6" value="0" />
+                <input type="text" id="kalciy7" value="0" />
+            </div>
+            <div class="price">
+                <div id="price0">Ціна, грн</div>
+                <input type="text" id="price1" value="0" />
+                <input type="text" id="price2" value="0" />
+                <input type="text" id="price3" value="0" />
+                <input type="text" id="price4" value="0" />
+                <input type="text" id="price5" value="0" />
+                <input type="text" id="price6" value="0" />
+                <input type="text" id="price7" value="0" />
+            </div>
+        </div>
+        <div class="plus_minus">
+            <div id="plus">
+                <a href="#" class="add_x">+</a>
+            </div>
+            <div id="minus">
+                <b href="#" class="minus_x">-</b>
+            </div>
+        </div>
+        <div class="min_max_title">Максимальні та мінімальні потреби поживних речовин</div>
+        <div class="max_min_table">
+            <div class="max_min">
+                <div id="max">max</div>
+                <div id="min">min</div>
+            </div>
+            <div class="max_min1">
+                <div id="korm_od01">Кормових одиниць, кг</div>
+                <input type="text" id="max1" value="0" />
+                <input type="text" id="min1" value="0" />
+            </div>
+            <div class="max_min2">
+                <div id="protein01">Перетравний протеїн, кг</div>
+                <input type="text" id="max2" value="0" />
+                <input type="text" id="min2" value="0" />
+            </div>
+            <div class="max_min3">
+                <div id="lizyn01">Лізин, кг</div>
+                <input type="text" id="max3" value="0" />
+                <input type="text" id="min3" value="0" />
+            </div>
+            <div class="max_min4">
+                <div id="kalciy01">Кальцій, кг</div>
+                <input type="text" id="max4" value="0" />
+                <input type="text" id="min4" value="0" />
+            </div>
+        </div>
+        <div class="buttons">
+            <input type="button" id="rozraxynok" value="Розрахувати" />
+            <input type="button" id="clear" value="Очистити" />
+        </div>
+        <div class="title_res1" id="title_res1">Невірно введені дані!<br><span>Вимоги: <br>всі значення додатні;<br>ціни не дорівнюють нулю;<br>в стовпчику не можуть бути всі нулі,<br> адже це критерій вибору.</span></div>
+        <div class="result" id="result">
+            <div class="title_res">Оптимальний розподіл та мінімальні витрати знайдено!</div>
+            <div class="rozpodil">
+                <div class="zmin1">
+                    <input type="text" id="title_x1" value="" />
+                    <input type="text" id="x1" value="0" />
+                </div>
+                <div class="zmin2">
+                    <input type="text" id="title_x2" value="" />
+                    <input type="text" id="x2" value="0" />
+                </div>
+                <div class="zmin3">
+                    <input type="text" id="title_x3" value="" />
+                    <input type="text" id="x3" value="0" />
+                </div>
+                <div class="zmin4">
+                    <input type="text" id="title_x4" value="" />
+                    <input type="text" id="x4" value="0" />
+                </div>
+                <div class="zmin5">
+                    <input type="text" id="title_x5" value="" />
+                    <input type="text" id="x5" value="0" />
+                </div>
+                <div class="zmin6">
+                    <input type="text" id="title_x6" value="" />
+                    <input type="text" id="x6" value="0" />
+                </div>
+                <div class="zmin7">
+                    <input type="text" id="title_x7" value="" />
+                    <input type="text" id="x7" value="0" />
+                </div>
+            </div>
+            <div class="min_cost">
+                <input type="text" id="title_zmin" value="Мінімальні витрати" />
+                <input type="text" id="zmin" value="0" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

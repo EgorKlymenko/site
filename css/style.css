@@ -1,0 +1,600 @@
+ body {
+     font-size: 14px;
+     margin: 0px;
+     padding: 0px;
+     font-family: "Times New Roman", Times, serif;
+ }
+ 
+ #page {
+     max-width: 900px;
+     margin: 20px auto;
+     padding: 20px;
+     border-radius: 10px;
+     font-weight: bold;
+     box-shadow: 0 0 10px #00338b;
+ }
+ 
+ #page #subpage {
+     margin: 10px 30px 30px 30px;
+     padding: 30px;
+     border-radius: 10px;
+     font-weight: bold;
+     box-shadow: 0 0 10px #ababab;
+     opacity: 0.6;
+ }
+ 
+ #page #subpage:hover {
+     opacity: 1;
+ }
+ 
+ #page #subpage .title {
+     width: 100%;
+     text-align: center;
+     font-size: 20pt;
+     color: #042f77;
+     /* text-shadow: 1px 1px 10px #00338b; */
+     margin-bottom: 15px;
+     opacity: 1;
+ }
+ 
+ #example {
+     width: 30%;
+ }
+ 
+ #example:hover {
+     box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.85);
+     top: -2px;
+ }
+ 
+ .table_col_names {
+     padding: 1% 2%;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+ }
+ 
+ input {
+     text-align: center;
+ }
+ 
+ .pojiv_rechov {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .start_table {
+     display: flex;
+     margin: 1%;
+ }
+ 
+ .title_zerno {
+     max-width: 15%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ #zerno_title2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #zerno_title4 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #zerno_title5 {
+     display: none;
+ }
+ 
+ #zerno_title6 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #zerno_title7 {
+     display: none;
+ }
+ 
+ .korm_odinic {
+     max-width: 20%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ #korm_od2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #korm_od4 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #korm_od5 {
+     display: none;
+ }
+ 
+ #korm_od6 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #korm_od7 {
+     display: none;
+ }
+ 
+ .protein {
+     max-width: 20%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ #protein2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #protein4 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #protein5 {
+     display: none;
+ }
+ 
+ #protein6 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #protein7 {
+     display: none;
+ }
+ 
+ .lizyn {
+     max-width: 10%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ #lizyn2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #lizyn4 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #lizyn5 {
+     display: none;
+ }
+ 
+ #lizyn6 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #lizyn7 {
+     display: none;
+ }
+ 
+ .kalciy {
+     max-width: 10%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ #kalciy2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #kalciy4 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #kalciy5 {
+     display: none;
+ }
+ 
+ #kalciy6 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #kalciy7 {
+     display: none;
+ }
+ 
+ .price {
+     max-width: 13%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ #price2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #price4 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #price5 {
+     display: none;
+ }
+ 
+ #price6 {
+     display: none;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #price7 {
+     display: none;
+ }
+ 
+ .plus_minus {
+     width: 100%;
+     display: flex;
+ }
+ 
+ #plus {
+     margin-left: 4%;
+     width: 4%;
+ }
+ 
+ #plus a {
+     padding: 0px 5px;
+     background: #042f77;
+     color: #ffffff;
+     border-radius: 10px;
+     font-weight: bold;
+ }
+ 
+ #minus {
+     cursor: pointer;
+     margin-left: 4%;
+     width: 4%;
+     display: none;
+ }
+ 
+ #minus b {
+     padding: 0px 6px;
+     background: #042f77;
+     color: #ffffff;
+     border-radius: 10px;
+     font-weight: bold;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ b {
+     text-decoration: none;
+ }
+ 
+ .min_max_title {
+     margin-top: 3%;
+     color: blue;
+     margin-bottom: 3%;
+     text-align: center;
+     font-size: 15pt;
+ }
+ 
+ .max_min_table {
+     text-align: center;
+     margin: 1%;
+     display: flex;
+ }
+ 
+ .max_min {
+     width: 3%;
+     margin: 1%;
+ }
+ 
+ #max {
+     margin-top: 70%;
+ }
+ 
+ #min {
+     margin-top: 70%;
+ }
+ 
+ .max_min1 {
+     width: 25%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .max_min2 {
+     width: 25%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .max_min3 {
+     width: 25%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .max_min4 {
+     width: 25%;
+     margin: 1%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ #min1 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #min2 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #min3 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ #min4 {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ .buttons {
+     margin-top: 2%;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ #rozraxynok {
+     min-width: 25%;
+     height: 30px;
+     color: black;
+     text-decoration: underline;
+ }
+ 
+ #clear {
+     min-width: 25%;
+     height: 30px;
+     color: black;
+     text-decoration: underline;
+ }
+ 
+ #rozraxynok:hover {
+     box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.85);
+     top: -2px;
+ }
+ 
+ #clear:hover {
+     box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.85);
+     top: -2px;
+ }
+ 
+ .title_res1 {
+     margin-top: 3%;
+     color: red;
+     font-size: 18pt;
+     max-width: 100%;
+     text-align: center;
+     display: none;
+ }
+ 
+ span {
+     color: purple;
+     font-size: 12pt;
+     max-width: 100%;
+     text-align: center;
+ }
+ 
+ .result {
+     display: none;
+     text-align: center;
+     margin: 5% 1% 1%;
+ }
+ 
+ .title_res {
+     color: blue;
+     font-size: 15pt;
+     max-width: 100%;
+     text-align: center;
+ }
+ 
+ .rozpodil {
+     margin-top: 2%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .rozpodil input {
+     margin: 1% auto 1%;
+     width: 20%;
+ }
+ 
+ #title_x1 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+ }
+ 
+ #title_x2 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+ }
+ 
+ #title_x3 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+ }
+ 
+ #title_x4 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+     display: none;
+ }
+ 
+ #title_x5 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+     display: none;
+ }
+ 
+ #title_x6 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+     display: none;
+ }
+ 
+ #title_x7 {
+     color: white;
+     background-color: red;
+     border: none;
+     max-width: 12%;
+     display: none;
+ }
+ 
+ #x1 {
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ #x2 {
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ #x3 {
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ #x4 {
+     display: none;
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ #x5 {
+     display: none;
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ #x6 {
+     display: none;
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ #x7 {
+     display: none;
+     text-align: center;
+     max-width: 10%;
+ }
+ 
+ .min_cost {
+     margin-top: 2%;
+ }
+ 
+ #title_zmin {
+     color: white;
+     background-color: blue;
+     border: none;
+     max-width: 15%;
+ }
+ 
+ #zmin {
+     text-align: center;
+     max-width: 15%;
+ }
+ 
+ @media screen and (max-width:500px) {
+     #title0 {
+         display: none;
+     }
+     #korm_od0 {
+         display: none;
+     }
+     #protein0 {
+         display: none;
+     }
+     #lizyn0 {
+         display: none;
+     }
+     #kalciy0 {
+         display: none;
+     }
+     #price0 {
+         display: none;
+     }
+     #korm_od01 {
+         display: none;
+     }
+     #protein01 {
+         display: none;
+     }
+     #lizyn01 {
+         display: none;
+     }
+     #kalciy01 {
+         display: none;
+     }
+ }
+ 
+ @media screen and (max-width:620px) {
+     .max_min {
+         display: none;
+     }
+ }
